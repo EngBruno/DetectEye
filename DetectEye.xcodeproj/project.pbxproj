@@ -15,6 +15,7 @@
 		15373D131C03C2FE007A717C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15373D111C03C2FE007A717C /* LaunchScreen.storyboard */; };
 		15373D1E1C03C2FE007A717C /* DetectEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D1D1C03C2FE007A717C /* DetectEyeTests.m */; };
 		15373D291C03C2FE007A717C /* DetectEyeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D281C03C2FE007A717C /* DetectEyeUITests.m */; };
+		15373D391C03C666007A717C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15373D381C03C666007A717C /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		15373D241C03C2FE007A717C /* DetectEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15373D281C03C2FE007A717C /* DetectEyeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectEyeUITests.m; sourceTree = "<group>"; };
 		15373D2A1C03C2FE007A717C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15373D381C03C666007A717C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		15373CF71C03C2FE007A717C = {
 			isa = PBXGroup;
 			children = (
+				15373D381C03C666007A717C /* .gitignore */,
 				15373D361C03C30B007A717C /* Frameworks */,
 				15373D021C03C2FE007A717C /* DetectEye */,
 				15373D1C1C03C2FE007A717C /* DetectEyeTests */,
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15373D391C03C666007A717C /* .gitignore in Resources */,
 				15373D131C03C2FE007A717C /* LaunchScreen.storyboard in Resources */,
 				15373D101C03C2FE007A717C /* Assets.xcassets in Resources */,
 				15373D0E1C03C2FE007A717C /* Main.storyboard in Resources */,
