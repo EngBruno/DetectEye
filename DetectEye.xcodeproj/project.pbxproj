@@ -81,6 +81,7 @@
 		15373CF71C03C2FE007A717C = {
 			isa = PBXGroup;
 			children = (
+				15373D361C03C30B007A717C /* Frameworks */,
 				15373D021C03C2FE007A717C /* DetectEye */,
 				15373D1C1C03C2FE007A717C /* DetectEyeTests */,
 				15373D271C03C2FE007A717C /* DetectEyeUITests */,
@@ -138,6 +139,13 @@
 				15373D2A1C03C2FE007A717C /* Info.plist */,
 			);
 			path = DetectEyeUITests;
+			sourceTree = "<group>";
+		};
+		15373D361C03C30B007A717C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
