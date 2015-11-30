@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		15373D051C03C2FE007A717C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D041C03C2FE007A717C /* main.m */; };
 		15373D081C03C2FE007A717C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D071C03C2FE007A717C /* AppDelegate.m */; };
-		15373D0B1C03C2FE007A717C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D0A1C03C2FE007A717C /* ViewController.m */; };
+		15373D0B1C03C2FE007A717C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15373D0A1C03C2FE007A717C /* ViewController.mm */; };
 		15373D0E1C03C2FE007A717C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15373D0C1C03C2FE007A717C /* Main.storyboard */; };
 		15373D101C03C2FE007A717C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15373D0F1C03C2FE007A717C /* Assets.xcassets */; };
 		15373D131C03C2FE007A717C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15373D111C03C2FE007A717C /* LaunchScreen.storyboard */; };
 		15373D1E1C03C2FE007A717C /* DetectEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D1D1C03C2FE007A717C /* DetectEyeTests.m */; };
 		15373D291C03C2FE007A717C /* DetectEyeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15373D281C03C2FE007A717C /* DetectEyeUITests.m */; };
 		15373D391C03C666007A717C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15373D381C03C666007A717C /* .gitignore */; };
+		15373D3B1C03C74B007A717C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D3A1C03C74B007A717C /* opencv2.framework */; };
+		15373D561C03CDCB007A717C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D551C03CDCB007A717C /* CoreMedia.framework */; };
+		15373D581C03CDDC007A717C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D571C03CDDC007A717C /* QuartzCore.framework */; };
+		15373D5A1C03CDE7007A717C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D591C03CDE7007A717C /* CoreVideo.framework */; };
+		15373D5C1C03CDF5007A717C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D5B1C03CDF5007A717C /* AssetsLibrary.framework */; };
+		15373D5E1C03CE06007A717C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D5D1C03CE06007A717C /* CoreImage.framework */; };
+		15373D601C03CE11007A717C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D5F1C03CE11007A717C /* Accelerate.framework */; };
+		15373D621C03CE25007A717C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D611C03CE25007A717C /* CoreGraphics.framework */; };
+		15373D641C03CE3E007A717C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D631C03CE3E007A717C /* Foundation.framework */; };
+		15373D661C03CEC5007A717C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15373D651C03CEC5007A717C /* AVFoundation.framework */; };
+		15373D691C03D0AF007A717C /* BREyeBlik.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15373D681C03D0AF007A717C /* BREyeBlik.mm */; };
+		15373D6D1C03D104007A717C /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 15373D6A1C03D104007A717C /* haarcascade_eye_tree_eyeglasses.xml */; };
+		15373D6E1C03D104007A717C /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 15373D6B1C03D104007A717C /* haarcascade_eye.xml */; };
+		15373D6F1C03D104007A717C /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 15373D6C1C03D104007A717C /* haarcascade_frontalface_alt2.xml */; };
+		15373D711C03D3FB007A717C /* Nariz.xml in Resources */ = {isa = PBXBuildFile; fileRef = 15373D701C03D3FB007A717C /* Nariz.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +56,7 @@
 		15373D061C03C2FE007A717C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15373D071C03C2FE007A717C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		15373D091C03C2FE007A717C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		15373D0A1C03C2FE007A717C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15373D0A1C03C2FE007A717C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		15373D0D1C03C2FE007A717C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15373D0F1C03C2FE007A717C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15373D121C03C2FE007A717C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +68,23 @@
 		15373D281C03C2FE007A717C /* DetectEyeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectEyeUITests.m; sourceTree = "<group>"; };
 		15373D2A1C03C2FE007A717C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15373D381C03C666007A717C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		15373D3A1C03C74B007A717C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		15373D441C03C9B1007A717C /* DetectEye-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DetectEye-Prefix.pch"; sourceTree = "<group>"; };
+		15373D551C03CDCB007A717C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		15373D571C03CDDC007A717C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		15373D591C03CDE7007A717C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		15373D5B1C03CDF5007A717C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		15373D5D1C03CE06007A717C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		15373D5F1C03CE11007A717C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		15373D611C03CE25007A717C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15373D631C03CE3E007A717C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15373D651C03CEC5007A717C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		15373D671C03D0AF007A717C /* BREyeBlik.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREyeBlik.h; sourceTree = "<group>"; };
+		15373D681C03D0AF007A717C /* BREyeBlik.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BREyeBlik.mm; sourceTree = "<group>"; };
+		15373D6A1C03D104007A717C /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		15373D6B1C03D104007A717C /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		15373D6C1C03D104007A717C /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		15373D701C03D3FB007A717C /* Nariz.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Nariz.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +92,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15373D661C03CEC5007A717C /* AVFoundation.framework in Frameworks */,
+				15373D641C03CE3E007A717C /* Foundation.framework in Frameworks */,
+				15373D5C1C03CDF5007A717C /* AssetsLibrary.framework in Frameworks */,
+				15373D621C03CE25007A717C /* CoreGraphics.framework in Frameworks */,
+				15373D601C03CE11007A717C /* Accelerate.framework in Frameworks */,
+				15373D5E1C03CE06007A717C /* CoreImage.framework in Frameworks */,
+				15373D5A1C03CDE7007A717C /* CoreVideo.framework in Frameworks */,
+				15373D581C03CDDC007A717C /* QuartzCore.framework in Frameworks */,
+				15373D561C03CDCB007A717C /* CoreMedia.framework in Frameworks */,
+				15373D3B1C03C74B007A717C /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +147,11 @@
 		15373D021C03C2FE007A717C /* DetectEye */ = {
 			isa = PBXGroup;
 			children = (
+				15373D3C1C03C86F007A717C /* Class */,
 				15373D061C03C2FE007A717C /* AppDelegate.h */,
 				15373D071C03C2FE007A717C /* AppDelegate.m */,
 				15373D091C03C2FE007A717C /* ViewController.h */,
-				15373D0A1C03C2FE007A717C /* ViewController.m */,
+				15373D0A1C03C2FE007A717C /* ViewController.mm */,
 				15373D0C1C03C2FE007A717C /* Main.storyboard */,
 				15373D0F1C03C2FE007A717C /* Assets.xcassets */,
 				15373D111C03C2FE007A717C /* LaunchScreen.storyboard */,
@@ -121,7 +164,12 @@
 		15373D031C03C2FE007A717C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15373D701C03D3FB007A717C /* Nariz.xml */,
+				15373D6A1C03D104007A717C /* haarcascade_eye_tree_eyeglasses.xml */,
+				15373D6B1C03D104007A717C /* haarcascade_eye.xml */,
+				15373D6C1C03D104007A717C /* haarcascade_frontalface_alt2.xml */,
 				15373D041C03C2FE007A717C /* main.m */,
+				15373D441C03C9B1007A717C /* DetectEye-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,8 +195,27 @@
 		15373D361C03C30B007A717C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15373D651C03CEC5007A717C /* AVFoundation.framework */,
+				15373D631C03CE3E007A717C /* Foundation.framework */,
+				15373D611C03CE25007A717C /* CoreGraphics.framework */,
+				15373D5F1C03CE11007A717C /* Accelerate.framework */,
+				15373D5D1C03CE06007A717C /* CoreImage.framework */,
+				15373D5B1C03CDF5007A717C /* AssetsLibrary.framework */,
+				15373D591C03CDE7007A717C /* CoreVideo.framework */,
+				15373D571C03CDDC007A717C /* QuartzCore.framework */,
+				15373D551C03CDCB007A717C /* CoreMedia.framework */,
+				15373D3A1C03C74B007A717C /* opencv2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15373D3C1C03C86F007A717C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				15373D671C03D0AF007A717C /* BREyeBlik.h */,
+				15373D681C03D0AF007A717C /* BREyeBlik.mm */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +321,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15373D6D1C03D104007A717C /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				15373D6F1C03D104007A717C /* haarcascade_frontalface_alt2.xml in Resources */,
 				15373D391C03C666007A717C /* .gitignore in Resources */,
 				15373D131C03C2FE007A717C /* LaunchScreen.storyboard in Resources */,
+				15373D711C03D3FB007A717C /* Nariz.xml in Resources */,
 				15373D101C03C2FE007A717C /* Assets.xcassets in Resources */,
+				15373D6E1C03D104007A717C /* haarcascade_eye.xml in Resources */,
 				15373D0E1C03C2FE007A717C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +353,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15373D0B1C03C2FE007A717C /* ViewController.m in Sources */,
+				15373D0B1C03C2FE007A717C /* ViewController.mm in Sources */,
 				15373D081C03C2FE007A717C /* AppDelegate.m in Sources */,
 				15373D051C03C2FE007A717C /* main.m in Sources */,
+				15373D691C03D0AF007A717C /* BREyeBlik.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +497,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DetectEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bruno.br.DetectEye;
@@ -436,6 +513,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DetectEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bruno.br.DetectEye;
@@ -510,6 +592,7 @@
 				15373D2F1C03C2FE007A717C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15373D301C03C2FE007A717C /* Build configuration list for PBXNativeTarget "DetectEyeTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +601,7 @@
 				15373D321C03C2FE007A717C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15373D331C03C2FE007A717C /* Build configuration list for PBXNativeTarget "DetectEyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +610,7 @@
 				15373D351C03C2FE007A717C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
