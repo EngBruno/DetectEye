@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.eyeBlink = [BREyeBlik alloc];
+    self.eyeBlink = [BREyeBlink alloc];
     [self.eyeBlink starMagic:self.imageView];
 }
 

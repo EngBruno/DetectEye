@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BREyeBlik.h"
+#import "BREyeBlink.h"
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (nonatomic, strong) BREyeBlik *eyeBlink;
+@property (nonatomic, strong) BREyeBlink *eyeBlink;
 @end
 

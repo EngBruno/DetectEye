@@ -36,7 +36,7 @@
 using namespace std;
 using namespace cv;
 
-@interface BREyeBlik : NSObject<CvVideoCameraDelegate>{
+@interface BREyeBlink : NSObject<CvVideoCameraDelegate>{
 
 }
 @property(nonatomic,retain) CvVideoCamera* videoCamere;

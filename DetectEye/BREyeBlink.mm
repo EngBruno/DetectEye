@@ -6,9 +6,9 @@
 //  Copyright © 2015 ifce. All rights reserved.
 //
 
-#import "BREyeBlik.h"
+#import "BREyeBlink.h"
 
-@implementation BREyeBlik{
+@implementation BREyeBlink{
     CascadeClassifier faceCascade;
     CascadeClassifier eyes_cascade;
     CascadeClassifier nose_cascade;
@@ -26,7 +26,7 @@
     faceCascade.load([faceCascadePath UTF8String]);
     
     //NSString* eyes_cascade_name = [[NSBundle mainBundle] pathForResource:@"haarcascade_eye_tree_eyeglasses" ofType:@"xml"];
-    NSString* eyes_cascade_name = [[NSBundle mainBundle]  pathForResource:@"frontalEyes35x16" ofType:@"xml"];
+    NSString* eyes_cascade_name = [[NSBundle mainBundle]  pathForResource:@"haarcascade_lefteye_2splits" ofType:@"xml"];
     eyes_cascade.load([eyes_cascade_name UTF8String]);
 
     //NSString* eyes_cascade_name = [[NSBundle mainBundle] pathForResource:@"haarcascade_eye_tree_eyeglasses" ofType:@"xml"];
@@ -38,7 +38,8 @@
     self.videoCamere.delegate = self;
     self.videoCamere.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     self.videoCamere.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
-    self.videoCamere.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeLeft;
+    self.videoCamere.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+    self.videoCamere.rotateVideo = YES;
     self.videoCamere.defaultFPS = 30;
     [self.videoCamere start];
 }
@@ -56,7 +57,7 @@
     for( size_t i = 0; i < faces.size(); i++ ){
         cv::Point center( faces[0].x + faces[0].width*0.5, faces[0].y + faces[0].height*0.5 );
         ellipse( image, center, cv::Size( faces[0].width*0.5, faces[0].height*0.5), 0, 0, 360, Scalar( 255, 0, 255 ), 4, 8, 0 );
-        [self detect_nose:image];
+        [self detect_eyes:image];
         
     }
 
@@ -97,9 +98,8 @@
     eyes_cascade.detectMultiScale( faceROI, eyes, 1.1, 2, 0 |CV_HAAR_SCALE_IMAGE, cv::Size(30, 30) );
     for( size_t j = 0; j < eyes.size(); j++ ){
         
-        cv::Point center( faces[0].x + eyes[j].x + eyes[j].width*0.5, faces[0].y + eyes[j].y + eyes[j].height*0.5 );
-        float radius = cvRound( (eyes[j].width + eyes[j].height)*0.25 );
-//        circle(image, center, radius, Scalar( 255, 255, 255 ));
+        cv::Point center( faces[0].x + eyes[0].x + eyes[0].width*0.5, faces[0].y + eyes[0].y + eyes[0].height*0.5 );
+        float radius = cvRound( (eyes[0].width + eyes[0].height)*0.25 );
         cv::Rect rectEye(center.x-radius/2,center.y-radius/2,20,20);
         rectangle(image, rectEye, Scalar( 25, 24, 1 ));
         

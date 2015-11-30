@@ -20,17 +20,29 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-WL-Vx2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t5U-KU-UBg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kEj-WL-Vx2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5Fr-Wa-eSY"/>
+                            <constraint firstItem="t5U-KU-UBg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="8tq-tt-ThU"/>
+                            <constraint firstItem="t5U-KU-UBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oi5-GX-RDM"/>
                             <constraint firstItem="kEj-WL-Vx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QuT-vm-Y6g"/>
+                            <constraint firstItem="t5U-KU-UBg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="h95-9F-5TZ"/>
+                            <constraint firstItem="t5U-KU-UBg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jg1-K6-1y6"/>
                             <constraint firstItem="kEj-WL-Vx2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="tOl-P3-H4e"/>
                             <constraint firstItem="kEj-WL-Vx2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vyM-03-zJ4"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kEj-WL-Vx2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="kEj-WL-Vx2" id="iRi-TT-xv6"/>
+                        <outlet property="imageView" destination="t5U-KU-UBg" id="MI3-Z0-i8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
